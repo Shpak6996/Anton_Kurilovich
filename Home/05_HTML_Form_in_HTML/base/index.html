@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+<style>
+    table {
+   
+    width: 700px; /* Ширина таблицы */
+   }
+</style>  
+</head>
+
+  <body>
+    <form action="http://sc.it-academy.by/fe/form.php"></form>
+    <table border="0">
+        <tr>
+            <th>Простая форма поиска с вариантами:</th>
+            <th>Простая форма поиска с вариантами:</th>
+        </tr>
+        <tr>
+            <th>
+                <fieldset>
+                    <legend align="left" >Строка поиска</legend>
+                        <input maxlength="10">
+                        <input type="submit" value="Искать"></br>
+                        <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0"> на сайте  <!--почему это текст ЖИРНЫЙ????????????-->
+                        <input type="radio" name="radio_group" value="value_02" id="Checkbox_Group2_0"> в google</br>
+                        <a><em>Длина запроса не более 10 символов</em></a>            
+                </fieldset>
+            </th>
+            <th>
+                <fieldset>
+                    <legend align="left" >Строка поиска</legend>
+                        <input type=required>*
+                        <input type="submit" value="Искать"></br>
+                        <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0"> на сайте 
+                        <input type="radio" name="radio_group" value="value_02" id="Checkbox_Group2_0"> в google</br>
+                        <a><em>* - обязательное поле</br> Автофокус в поле поиска</em></a>
+                </fieldset>
+            </th>
+        </tr>
+        <tr>
+            <th>Простая форма авторизации:</th>
+            <th>Опрос(голосование):</th>
+        </tr>
+        <tr>
+            <td> 
+                <fieldset>
+                    <legend align="left" >Авторизируйтесь</legend>
+                        <input type="required" id="login" name="login">*Логин<br>
+                        <input type="password" type="required" id="pass" name="password">*Пароль<br> <!--можноли вставлять 2 type????????????-->
+                        <input type="checkbox" id="chbox[]" > Оставаться в системе<br> <!--id нужен для JS????????????-->
+                        <input type="button" value="Войти"></br>
+                        <a><em>* - обязательное поле</em></a>
+                </fieldset>
+            </td>
+            <td>
+                <fieldset>
+                    <legend align="left" >Как вам?</legend>
+                        <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0">ничего<br> 
+                        <input type="radio" name="radio_group" value="value_02" id="Checkbox_Group2_0">неплохо<br> 
+                        <input type="radio" name="radio_group" value="value_03" id="Checkbox_Group3_0">хорошо<br> 
+                        <input type="radio" name="radio_group" value="value_04" id="Checkbox_Group4_0">супер<br>
+                        <input type="button" value="Отправить"></br>
+                        <a><em>Есть скрытое поле
+                            name=date_voite, value="2013.12.31"</em></a> <!--какая форма????????????я не понимаю-->
+                </fieldset>
+            </td>
+       </tr>
+       <tr>
+            <th>Отзыв:</th>
+            <th>Выпадающий и мульти списки:</th>
+        </tr>
+       <tr>
+        <td>
+            <fieldset>
+                <legend align="left" >Оставьте Ваш отзыв</legend>
+                <input type="required" id="login" name="name">* Имя<br>
+                <input type="email" id="email" name="email" method="post">* e-mail<br>
+                <textarea name="text" cols="25" rows="3"></textarea>
+                <input type="button" value="Отправить"></br>
+                <a><em>* - обязательное поле<br>
+                    поле email - с проверкой<br>
+                    метод POST
+                    </em></a>
+            </fieldset>        
+        </td>
+        <td>
+            <fieldset>
+                    <legend align="left" >Города РБ</legend>
+
+
+            </fieldset>
+        </td>
+      </tr>
+      <tr>
+        <th>Загрузка файла на сервер:</th>
+        <th>Валидация данных HTML5:</th>
+    </tr>
+      <tr>
+        <td><fieldset>
+           <legend align="left" >Upload
+           </legend></td>
+        <td><fieldset>
+           <legend align="left" >Строка поиска</legend></td>
+      </tr>
+  </body>
+</html>
