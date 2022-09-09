@@ -89,8 +89,27 @@
         <td>
             <fieldset>
                     <legend align="left" >Города РБ</legend>
-
-
+                       <select name="select">
+                        <option value="Брест">Брест</option>
+                        <option value="Витебск">Витебск</option>
+                        <option value="Гомель">Гомель</option>
+                        <option value="Гродно">Гродно</option>
+                        <option value="Минск">Минск</option>
+                        <option value="Могилёв">Могилёв</option>
+                       </select> 
+                       <select name="list">
+                        <optgroup label="Города РБ">
+                              <option value="1">Брест</option>
+                              <option value="2">Минск</option>
+                              <option value="3">Витебск</option>
+                        </optgroup>
+                        <optgroup label="Города России">
+                              <option value="4">Москва</option>
+                              <option value="5">Рязань</option>
+                              <option value="6">Магадан</option>
+                        </optgroup>
+                        </select>
+                        <input type="button" value="ок">
             </fieldset>
         </td>
       </tr>
@@ -99,9 +118,23 @@
         <th>Валидация данных HTML5:</th>
     </tr>
       <tr>
-        <td><fieldset>
-           <legend align="left" >Upload
-           </legend></td>
+        <td>
+            <fieldset>
+                <legend align="left" >Upload</legend>
+                <a>Файл:</a><br>
+                <input type="file" name="file_Field" dir=“ltr”><br>
+                <a>Срок хранения (года):</a><br>
+                <input enctype="multipart/form-data">
+                <input type="button" value="Загрузить"><br>
+                <a><em>Метод POST<br>
+                    В теге form используйте атрибут<br>
+                    enctype="multipart/form-data" для отправки<br>
+                    файла на сервер
+                    </em></a>
+        
+
+            </fieldset>
+        </td>
         <td><fieldset>
            <legend align="left" >Строка поиска</legend></td>
       </tr>
