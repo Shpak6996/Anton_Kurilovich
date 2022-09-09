@@ -8,6 +8,12 @@
    
     width: 700px; /* Ширина таблицы */
    }
+   body {
+            height: 842px;
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 </style>  
 </head>
 
@@ -19,17 +25,17 @@
             <th>Простая форма поиска с вариантами:</th>
         </tr>
         <tr>
-            <th>
+            <td>
                 <fieldset>
                     <legend align="left" >Строка поиска</legend>
                         <input maxlength="10">
                         <input type="submit" value="Искать"></br>
-                        <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0"> на сайте  <!--почему это текст ЖИРНЫЙ????????????-->
+                        <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0"> на сайте  
                         <input type="radio" name="radio_group" value="value_02" id="Checkbox_Group2_0"> в google</br>
                         <a><em>Длина запроса не более 10 символов</em></a>            
                 </fieldset>
-            </th>
-            <th>
+            </td>
+            <td>
                 <fieldset>
                     <legend align="left" >Строка поиска</legend>
                         <input type=required>*
@@ -38,7 +44,7 @@
                         <input type="radio" name="radio_group" value="value_02" id="Checkbox_Group2_0"> в google</br>
                         <a><em>* - обязательное поле</br> Автофокус в поле поиска</em></a>
                 </fieldset>
-            </th>
+            </td>
         </tr>
         <tr>
             <th>Простая форма авторизации:</th>
@@ -49,7 +55,7 @@
                 <fieldset>
                     <legend align="left" >Авторизируйтесь</legend>
                         <input type="required" id="login" name="login">*Логин<br>
-                        <input type="password" type="required" id="pass" name="password">*Пароль<br> <!--можноли вставлять 2 type????????????-->
+                        <input type="password"  id="pass" name="password">*Пароль<br> 
                         <input type="checkbox" id="chbox[]" > Оставаться в системе<br> <!--id нужен для JS????????????-->
                         <input type="button" value="Войти"></br>
                         <a><em>* - обязательное поле</em></a>
@@ -97,7 +103,7 @@
                         <option value="Минск">Минск</option>
                         <option value="Могилёв">Могилёв</option>
                        </select> 
-                       <select name="list">
+                       <select name="list" size="8">
                         <optgroup label="Города РБ">
                               <option value="1">Брест</option>
                               <option value="2">Минск</option>
@@ -131,12 +137,19 @@
                     enctype="multipart/form-data" для отправки<br>
                     файла на сервер
                     </em></a>
-        
-
             </fieldset>
         </td>
         <td><fieldset>
-           <legend align="left" >Строка поиска</legend></td>
+           <legend align="left" >Строка поиска</legend>
+           <input type="text" placeholder="Только русские буквы"><br>
+            <label for="phone"><em>Телефонный номер в формате
+                +ХХХ-ХХ-ХХХХХХХ, где Х - любое числоы</em>
+                </label><br>
+            <input type="text" placeholder="+1-234-567-8901"
+                    pattern="\+\d-\d{3}-\d{3}-\d{4}" id="phone" name="phone" /><br>
+            <input type="submit" value="Проверить" />
+        </td>
       </tr>
   </body>
 </html>
+<!--ВОЗМОЖНО Я НАКАСЯЧИЛ С ТЕГАМИ, НО ГЛАВНОЕ ЧТО ЭТО ВЫГЯДИТ В ТОЧКНОСИТ КАК В ПРИМЕРЕ -->
