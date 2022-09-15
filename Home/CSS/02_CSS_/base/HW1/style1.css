@@ -1,0 +1,34 @@
+.item {
+  width: 70px;
+  height: 118px;
+  padding: 36px;
+  margin: 9px;
+  float: left;
+  background-image: url(map.png);
+  border-radius: 23px;
+}
+.map1 {
+  background-position: 0px 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.map2 {
+  background-position: -145px -200px;
+  margin-left: -118px;
+  margin-top: 37px;
+}
+.map3 {
+  background-position: -289px -399px;
+  margin-left: -118px;
+  margin-top: 78px;
+}
+.map4 {
+  background-position: -433px -599px;
+  margin-left: -116px;
+  margin-top: 113px;
+}
+.map5 {
+  background-position: -289px 188px;
+  margin-left: -114px;
+  margin-top: 147px;
+}
