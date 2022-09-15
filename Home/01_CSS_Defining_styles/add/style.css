@@ -1,0 +1,26 @@
+body {
+  height: 842px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.a {
+  text-align: right;
+  font-weight: bolder;
+}
+.head {
+  text-align: right;
+}
+.wow {
+  text-indent: 15px;
+  font-family: "Dancing Script", cursive;
+}
+.mr {
+  text-indent: 15px;
+  font-family: "Dancing Script", cursive;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+.e {
+  font-weight: normal;
+}
