@@ -1,0 +1,13 @@
+.menu {
+  width: 15em;
+  background-color: aquamarine;
+  float: left;
+}
+.content {
+  background-color: rebeccapurple;
+  margin-bottom: 2em;
+}
+.footer {
+  background-color: brown;
+  clear: both;
+}
