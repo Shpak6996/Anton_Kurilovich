@@ -1,4 +1,14 @@
+.s {
+  width: 350px;
+}
+
 ul {
   list-style-type: lower-roman;
-  width: 350px;
+}
+.code {
+  background: rgb(0, 0, 0);
+  color: green;
+  width: 400px;
+  overflow: visible;
+  max-height: 80px;
 }
