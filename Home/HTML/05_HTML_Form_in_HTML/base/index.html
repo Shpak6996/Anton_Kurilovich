@@ -5,8 +5,7 @@
     <title>Form</title>
 <style>
     table {
-   
-    width: 700px; /* Ширина таблицы */
+    width: 700px; 
    }
    body {
             height: 842px;
@@ -16,140 +15,110 @@
         }
 </style>  
 </head>
-
   <body>
-    <form action="http://sc.it-academy.by/fe/form.php"></form>
     <table border="0">
+     <col width="50%"><col width="50%">
         <tr>
-            <th>Простая форма поиска с вариантами:</th>
-            <th>Простая форма поиска с вариантами:</th>
-        </tr>
-        <tr>
-            <td>
+            <td><p><b>Простоая форма поиска с вариантами:</b></p>
+             <form action="http://sc.it-academy.by/fe/form.php" name="form1" method="get">
                 <fieldset>
-                    <legend align="left" >Строка поиска</legend>
-                        <input maxlength="10">
-                        <input type="submit" value="Искать"></br>
-                        <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0"> на сайте  
-                        <input type="radio" name="radio_group" value="value_02" id="Checkbox_Group2_0"> в google</br>
-                        <em>Длина запроса не более 10 символов</em>           
+                    <legend>Строка поиска</legend>
+                    <input type="text" name="text1" maxlength="10">
+                    <input type="submit" value="Искать">
+                    <br>
+                    <input type="radio" name="radio1" value="radio1"><label>на сайте</label>
+                    <input type="radio" name="radio1" value="radio2"><label>в google</label>
                 </fieldset>
-            </td>
-            <td>
-                <fieldset>
-                    <legend align="left" >Строка поиска</legend>
-                        <input type=required>*
-                        <input type="submit" value="Искать"></br>
-                        <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0"> на сайте 
-                        <input type="radio" name="radio_group" value="value_02" id="Checkbox_Group2_0"> в google</br>
-                        <em>* - обязательное поле</br> Автофокус в поле поиска</em>
-                </fieldset>
-            </td>
-        </tr>
-        <tr>
-            <th>Простая форма авторизации:</th>
-            <th>Опрос(голосование):</th>
-        </tr>
-        <tr>
-            <td> 
-                <fieldset>
-                    <legend align="left" >Авторизируйтесь</legend>
-                        <input type="required" id="login" name="login">*Логин<br>
-                        <input type="password"  id="pass" name="password">*Пароль<br> 
-                        <input type="checkbox" id="chbox[]" > Оставаться в системе<br> <!--id нужен для JS????????????-->
-                        <input type="button" value="Войти"></br>
-                        <em>* - обязательное поле</em>
-                </fieldset>
-            </td>
-            <td>
-                <fieldset>
-                    <legend align="left" >Как вам?</legend>
-                        <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0">ничего<br> 
-                        <input type="radio" name="radio_group" value="value_02" id="Checkbox_Group2_0">неплохо<br> 
-                        <input type="radio" name="radio_group" value="value_03" id="Checkbox_Group3_0">хорошо<br> 
-                        <input type="radio" name="radio_group" value="value_04" id="Checkbox_Group4_0">супер<br>
-                        <input type="button" value="Отправить"></br>
-                        <em>Есть скрытое поле
-                            name=date_voite, value="2013.12.31"</em> <!--какая форма????????????я не понимаю-->
-                </fieldset>
-            </td>
-       </tr>
-       <tr>
-            <th>Отзыв:</th>
-            <th>Выпадающий и мульти списки:</th>
-        </tr>
-       <tr>
-        <td>
-            <fieldset>
-                <legend align="left" >Оставьте Ваш отзыв</legend>
-                <input type="required" id="login" name="name">* Имя<br>
-                <input type="email" id="email" name="email" method="post">* e-mail<br><!--как то меня это сточка смущает-->
-                <textarea name="text" cols="25" rows="3"></textarea>
-                <input type="button" value="Отправить"></br>
-                <em>* - обязательное поле<br>
-                    поле email - с проверкой<br>
-                    метод POST
-                    </em>
-            </fieldset>        
+             </form>
         </td>
         <td>
-            <fieldset>
-                    <legend align="left" >Города РБ</legend>
-                       <select name="select">
-                        <option value="Брест">Брест</option>
-                        <option value="Витебск">Витебск</option>
-                        <option value="Гомель">Гомель</option>
-                        <option value="Гродно">Гродно</option>
-                        <option value="Минск">Минск</option>
-                        <option value="Могилёв">Могилёв</option>
-                       </select> 
-                       <select name="list" size="8">
+            <p><b>Простая форма поиска с вариантами:</b></p>
+            <form action="http://sc.it-academy.by/fe/form.php" name="form2" method="get">
+                <fieldset>
+                    <input type="text" name="text2" required autofocus>*
+                    <input type="submit" value="Искать">
+                    <br>
+                    <input type="radio" name="radio2" value="radio1"><label>на сайте</label>
+                    <input type="radio" name="radio2" value="radio2" checked><label>в google</label>
+                    <div><i>*-обязательное поле<br>Автофокус в поле поиска</i></div>
+                </fieldset>
+            </form>
+        </td>
+        </tr>
+        <tr>
+            <td><p><b>Простоая форма авторизации:</b></p></td>
+            <form action="http://sc.it-academy.by/fe/form.php" name="form1" method="get">
+                <fieldset>
+                    <legend>Авторизуйтесь</legend>
+                    <input type="text" name="login" placeholder="" required><label>* Логин</label>
+                    <br>
+                    <input type="password" name="pass" placeholder="" required><label>* Пароль</label>
+                    <br>
+                    <input type="checkbox" name="sistem"><label>Остаться в системе</label>
+                    <br>
+                    <input type="submit" value="Войти">
+                    <br>
+                    <div><i>* - -обязательное поле</i></div>
+                </fieldset>
+            </form>
+            </td>
+            <td>
+                <p><b>Опрос(голосование):</b></p>
+                <form action="http://sc.it-academy.by/fe/form.php" name="form2" method="get">
+                    <fieldset>
+                        <legend>Как вам?</legend>
+                        <input type="radio" name="radio3" value="none" checked><label>ничего</label>
+                        <br>
+                        <input type="radio" name="radio3" value="sousou" checked><label>не плохо</label>
+                        <br>
+                        <input type="radio" name="radio3" value="goods" checked><label>хорошо</label>
+                        <br>
+                        <input type="radio" name="radio3" value="super" checked><label>супер</label>
+                        <br>
+                        <input type="submit" value="Отправить">
+                        <input type="hidden" name="data_voite" value="2013.12.31">
+                        <br>
+                        <div><i>Есть скрытое поле<br>name="data_voite" value="2013.12.31"</i></div>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><b>Отзыв:</b></p>
+                <form action="http://sc.it-academy.by/fe/form.php" name="form2" method="get">
+                    <fieldset>
+                        <legend>Оставьте ваш отзыв</legend>
+                        <input type="text" name="name" placeholder="" required><label>* Имя</label>
+                        <input name="email" name="email" placeholder="" required><label>* е-mail</label>
+                        <textarea name="ot" >форма отправки</textarea>
+                        <br>
+                        <input type="submit" value="Отправить">
+                        <div><i>*-обязательное поле<br>поле email - с проверкой<br>метод POST</i></div>
+                    </fieldset>
+            </td>
+            <td>
+                <p><b>Выподающий и мульти списки:</b></p>
+                <form action="http://sc.it-academy.by/fe/form.php" name="form2" method="get">
+                    <fieldset>
+                        <legend>Города РБ</legend>
+                        <select name="goroda">
                         <optgroup label="Города РБ">
-                              <option value="1">Брест</option>
-                              <option value="2">Минск</option>
-                              <option value="3">Витебск</option>
+                            <option value="minsk">Минск</option>
+                            <option value="gomel">Гомель</option>
+                            <option value="grodno">Гродно</option>
                         </optgroup>
-                        <optgroup label="Города России">
-                              <option value="4">Москва</option>
-                              <option value="5">Рязань</option>
-                              <option value="6">Магадан</option>
+                        <optgroup label="Города РФ">
+                            <option value="moskow">Москва</option>
+                            <option value="razan">Рязань</option>
+                            <option value="magadan">Магадан</option>
                         </optgroup>
-                        </select>
-                        <input type="button" value="ок">
-            </fieldset>
-        </td>
-      </tr>
-      <tr>
-        <th>Загрузка файла на сервер:</th>
-        <th>Валидация данных HTML5:</th>
-    </tr>
-      <tr>
-        <td>
-            <fieldset>
-                <legend align="left" >Upload</legend>
-                <a>Файл:</a><br>
-                <input type="file" name="file_Field" dir=“ltr”><br>
-                <a>Срок хранения (года):</a><br>
-                <input enctype="multipart/form-data">
-                <input type="button" value="Загрузить"><br>
-                <em>Метод POST<br>
-                    В теге form используйте атрибут<br>
-                    enctype="multipart/form-data" для отправки<br>
-                    файла на сервер
-                    </em>
-            </fieldset>
-        </td>
-        <td><fieldset>
-           <legend align="left" >Строка поиска</legend>
-           <input type="text" placeholder="Только русские буквы"><br>
-            <label for="phone"><em>Телефонный номер в формате
-                +ХХХ-ХХ-ХХХХХХХ, где Х - любое числоы</em>
-                </label><br>
-            <input type="text" placeholder="+1-234-567-8901"
-                    pattern="\+\d-\d{3}-\d{3}-\d{4}" id="phone" name="phone" /><br>
-            <input type="submit" value="Проверить" />
-        </td>
-      </tr>
+                    </select>
+                    <input type="submit" value="OK">
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+
   </body>
 </html>
-<!--ВОЗМОЖНО Я НАКАСЯЧИЛ С ТЕГАМИ, НО ГЛАВНОЕ ЧТО ЭТО ВЫГЯДИТ В ТОЧКНОСИТ КАК В ПРИМЕРЕ -->

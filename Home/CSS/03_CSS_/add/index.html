@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <style>
+      div.MenuLevel1 {
+        width: 500px;
+      }
+      div.MenuLevel1 > div {
+        background-color: yellow;
+        border: solid blue 1px;
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+      }
+      div.MenuLevel2 {
+        width: 150px;
+        display: none;
+      }
+      div.MenuLevel2 > div {
+        background-color: cyan;
+        border: solid blue 1px;
+        cursor: pointer;
+      }
+      div.MenuLevel1 > div:hover div.MenuLevel2 {
+        display: block;
+        position: absolute;
+        left: 80%;
+        top: 90%;
+        z-index: 1;
+      }
+      @media all and (max-width: 947px) {
+        div {
+          transition: width 2s, height 2s, background-color 2s, transform 2s;
+        } /**я понял что каждому надо было прописать класс, но так как они все DIV я просто дал Div значение transition**/
+        div.MenuLevel1 {
+          width: 450px;
+        }
+        div.MenuLevel1 > div {
+          background-color: rgba(11, 255, 44, 0.725);
+          border: solid rgb(0, 255, 51) 1px;
+          position: relative;
+          cursor: pointer;
+          display: flex;
+        }
+        div.MenuLevel2 {
+          width: 150px;
+          display: none;
+        }
+        div.MenuLevel2 > div {
+          background-color: rgb(60, 0, 255);
+          border: solid rgb(255, 0, 0) 1px;
+          cursor: pointer;
+        }
+        div.MenuLevel1 > div:hover div.MenuLevel2 {
+          display: block;
+          position: absolute;
+          left: 80%;
+          top: 90%;
+          z-index: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="MenuLevel1">
+      <div>Понедельник</div>
+      <div>
+        Вторник
+        <div class="MenuLevel2">
+          <div>Завтрак</div>
+          <div>Обед</div>
+          <div>Ужин</div>
+        </div>
+      </div>
+      <div>
+        Среда
+        <div class="MenuLevel2">
+          <div>Завтрак</div>
+          <div>Обед</div>
+          <div>Ужин</div>
+        </div>
+      </div>
+      <div>Четверг</div>
+      <div>Пятница</div>
+      <div>Суббота</div>
+      <div>Воскресенье</div>
+    </div>
+  </body>
+</html>

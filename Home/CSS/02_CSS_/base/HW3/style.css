@@ -1,13 +1,35 @@
-.menu {
+.navig {
   width: 15em;
   background-color: aquamarine;
   float: left;
+  height: 300px;
 }
-.content {
+.item {
   background-color: rebeccapurple;
-  margin-bottom: 2em;
+  margin-bottom: 0.2em;
+  margin-left: 15em;
+  padding-bottom: 0.1em;
 }
 .footer {
   background-color: brown;
   clear: both;
+}
+.clear {
+  clear: both;
+  margin-bottom: 0.1em;
+  background-color: bisque;
+}
+.wrap {
+  background-color: chartreuse;
+  padding-top: 0.1em;
+}
+.item {
+  padding-top: 0.1em;
+}
+.item img {
+  float: right;
+  border-color: aliceblue;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
 }
