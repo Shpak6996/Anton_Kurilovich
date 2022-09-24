@@ -10,46 +10,42 @@
     }
   </style>
   <body>
-    <form action="http://sc.it-academy.by/fe/form.php"></form>
+    <form action="http://sc.it-academy.by/fe/form.php" name="form1" method="get">
     <h1 class="text-center">Заполните анкету</h1>
     <fieldset>
-      <input
-        size="25"
-        type="required"
-        placeholder="Фамилия"
-        pattern="[А-Яа-яЁё]"
-        autofocus
-      />
-      text: Только кириллица, без пробелов, длинна поля 25, обязательное поле,
-      автофокус на данном поле<br />
-      <input
-        size="20"
-        type="required"
-        placeholder="Имя"
-        pattern="[А-Яа-яЁё ]"
-      />text: Только кириллица, без пробелов, длинна поля 20, обязательное
-      поле)<br />
-      <input
-        size="24"
-        type="required"
-        placeholder="Отчество"
-        pattern="[А-Яа-яЁё ]"
-      />text: Только кириллица, без пробелов, длинна поля 24, обязательное
-      поле)<br />
+      <legend>Личные данные</legend>
+      <input size="25" type="text" name="lastname" placeholder="Фамилия" required pattern="[А-Яа-яЁё]"autofocus><br>
+      <input size="20" type="text" name="Firstname" placeholder="Имя" required pattern="[А-Яа-яЁё ]"><br>
+      <input size="24" type="text" name="Secondname" placeholder="Отчество" required pattern="[А-Яа-яЁё ]">
+ 
       <fieldset>
         <legend align="left">Паспортные данные</legend>
-        text: Серия - только заглавные две латинские буквы с длинной 2 и
-        масимальным количсвом символ 2, количество букв не менее 2, обязательное
-        поле<br />
-        text: Номер паспорта - только цифры с длинной 7 и максимальным
-        количеством символов 7, количество цифр не менее 7, обязательное поле<br />
-        <inpur size="2" pattern="[A-Z]{2,}" type="required" /><br />
-        <input size="7" pattern="[0-9]{7}" type="required" />
+        <input type="text" name="seria" size="2" maxlength="2" placeholder="AB" required pattern="[A-Z]{2,}">
+        <input type="text" name="number" size="7" maxlength="7" placeholder="1234567" required pattern="[1-7]{7,}">
       </fieldset>
+
       <fieldset>
         <legend align="left">Дата рождения</legend>
+        <input type="text" name="year" size="4" maxlength="4" placeholder="2000" required pattern="\d{4}">
+        <label>Год</label>
+        <br>
+        <select name="mouns">
+          <option>январь</option>
+          <option>ферваль</option>
+          <option>март</option>
+          <option>апрель</option>
+          <option>май</option>
+          <option>июнь</option>
+          <option>июль</option>
+          <option>август</option>
+          <option>сентябрь</option>
+          <option>октябрь</option>
+          <option>ноябрь</option>
+          <option>декабрь</option>
+        </select>
+        <label>Месяц</label>
+        <br>
       </fieldset>
     </fieldset>
   </body>
 </html>
-<!--НАчал но не доделал, всё равно проверте-->

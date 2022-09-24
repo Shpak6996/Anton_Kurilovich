@@ -46,7 +46,7 @@
         </td>
         </tr>
         <tr>
-            <td><p><b>Простоая форма авторизации:</b></p></td>
+            <td><p><b>Простоая форма авторизации:</b></p>
             <form action="http://sc.it-academy.by/fe/form.php" name="form1" method="get">
                 <fieldset>
                     <legend>Авторизуйтесь</legend>
@@ -119,6 +119,33 @@
                 </form>
             </td>
         </tr>
-
+        <tr>
+            <td><p><b>Загрузка файлов на сервер:</b></p>
+                <form action="http://sc.it-academy.by/fe/form.php" name="form2" method="get">
+                    <fieldset>
+                        <legend>Upload</legend>
+                        <label>Файл:</label><br>
+                        <input type="file" name="file" dir="ltr"><br>
+                        <label>Срок хранения (года):</label><br>
+                        <input type="number" name="gods" min="1" size="4">
+                        <input type="submit" value="загрузить">
+                        <div><i>Метод POST <br>В теге form используется атрибут <br>enctype='multipart/form-data' для отправки<br>файлов на сервер</i></div>
+                    </fieldset>
+                </form>
+            </td>
+            <td>
+                <p><b>Валидация данных HTML5:</b></p>
+                <form action="http://sc.it-academy.by/fe/form.php" name="form2" method="get"></form>
+                <fieldset>
+                    <legend>Строка поиска</legend>
+                    <input type="text" name="ru" placeholder="Только русскими буквами" pattern="[А-Яа-я]+">
+                    <div><i>Телефонный номер в формате<br>+ХХХ-ХХ-ХХХХХХХ, где Х - любые числа</i></div>
+                    <input type="phon" name="phon" pattern="^\+\d{3}\-\d{2}\-\d{7}$">
+                    <br>
+                    <input type="sub" value="Проверка">
+                </fieldset>
+            </td>
+        </tr>
+    </table>
   </body>
 </html>
